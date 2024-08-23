@@ -1,7 +1,8 @@
 @charset "uft-8";
+@import url("xeicon.css");
 @import url("notosanskr/NotoSansKR.css");
 @import url("nanumsquare/nanumsquare.css");
-@import url("xeicon.css");
+
 /* Chrome, Safari용 스크롤 바 */
 ::-webkit-scrollbar {
   width: 5px;
@@ -105,6 +106,7 @@ body {
   display: block;
   float: left;
   width: 175px;
+  background-color: rgb(56, 120, 99);
 }
 .h-link-list > li::before {
   content: "";
@@ -129,7 +131,7 @@ body {
   letter-spacing: -0.1rem;
   transition: all 0.3s;
 }
-.h-link-list > li > a:hover{
+.h-link-list > li > a:hover {
   background-color: #fff;
   color: #2a3a67;
 }
@@ -176,7 +178,7 @@ body {
   left: 0;
   width: calc(100% + 20px);
   padding-bottom: 10px;
-  background-color: rgb(204, 204, 204);
+  background: #101d41;
   display: none;
 }
 .country > li {
@@ -193,6 +195,260 @@ body {
   font-weight: 400;
   transition: all 0.3s;
 }
-.country > li > a::hover {
+.country > li > a:hover {
   color: rgba(255, 255, 255, 1);
+}
+.header-middle {
+  position: relative;
+  display: block;
+  background-color: #fff;
+}
+.header-middle .pagew {
+  text-align: center;
+  padding: 20px 30px 15px 30px;
+}
+.gglogo {
+  position: relative;
+  display: block;
+  float: left;
+}
+.logo {
+  position: relative;
+  display: inline-block;
+}
+.bro {
+  position: relative;
+  display: block;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #333;
+  border-radius: 1.5rem;
+  border: 1px solid #b7b7b7;
+  padding: 0 13px;
+  margin-top: 13px;
+}
+.bro i img {
+  vertical-align: -2px;
+}
+/* header-bottom */
+.header-bottom {
+  position: relative;
+  display: block;
+  border-top: 1px solid #e9eff3;
+  background-color: #fff;
+}
+.header-bottom .pagew {
+  height: 65px;
+  background-color: bisque;
+}
+.logo-gnb {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  display: none;
+}
+.gnb {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+.mainmenu {
+  position: relative;
+  display: block;
+  width: 90%;
+  float: left;
+}
+.mainmenu > li {
+  position: relative;
+  display: block;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.mainmenu > li > a {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "NanumSquare";
+  color: #333;
+  line-height: 6.5rem;
+}
+.mainmenu > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ec008c;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.mainmenu > li > a:hover {
+  color: #ec008c;
+}
+.mainmenu > li > a:hover::after {
+  opacity: 1;
+}
+/* depth메뉴 */
+.submenu {
+  background-color: aqua;
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 230px;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* 스크롤 생성 */
+  max-height: 450px;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+  /* 영역을 숨김 */
+  visibility: hidden;
+  opacity: 0;
+  /* top: 50px; */
+  transition: all 0.3s;
+
+}
+.submenu_focus{
+  visibility: visible;
+  opacity: 1;
+  /* top: 65px; */
+}
+.submenu > li {
+  position: relative;
+  display: block;
+}
+.submenu > li > a {
+  position: relative;
+  display: block;
+  font-size: 1.6rem;
+  line-height: 40px;
+  padding: 0 10px;
+
+  transition: color 0.3s;
+}
+
+.submenu > li:hover > a {
+  color: #fff;
+  background-color: #ec008c;
+}
+.submenu > li > a > i {
+  float: right;
+  margin-top: 11px;
+}
+.submenu_focus_link {
+  background-color: #ec008c;
+}
+.submenu_focus_link > a {
+  color: #fff;
+}
+/* 3.depth메뉴 */
+.submenu-3rd {
+  position: relative;
+  display: none;
+  background-color: #efd3ec;
+}
+.submenu-3rd > li > a {
+  position: relative;
+  display: block;
+  font-size: 1.4rem;
+  line-height: 40px;
+  padding: 0 10px;
+
+  transition: background 0.3s;
+}
+.submenu-3rd > li:hover > a {
+  background-color: #f1c3ec;
+}
+/* more-menu */
+.more-menu {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.more-menu > li {
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 34px;
+}
+.more-menu > li > a {
+  position: relative;
+  display: block;
+}
+.hm {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 19px;
+  /* background-color: #ec008c; */
+}
+.hm span {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  display: block;
+  background: #424242;
+  transition: left 0.3s;
+}
+.hm span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.hm span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4px;
+}
+.hm span:nth-child(3) {
+  bottom: 1px;
+  left: 0;
+}
+.hm:hover span:nth-child(1) {
+  left: 4px;
+}
+.hm:hover span:nth-child(2) {
+  left: 0px;
+}
+.hm:hover span:nth-child(3) {
+  left: 4px;
+}
+.search-bt {
+  display: block;
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 3px;
+  background-color: #ec008c;
+}
+.search-bt i {
+  /* vertical-align: 5px; */
+}
+/* 서브메뉴에 호버했을때 바탕화면 */
+.header-dim {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99999;
 }

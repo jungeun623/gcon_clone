@@ -453,20 +453,20 @@ body {
 }
 
 /* 상단 스크롤시 class추가 */
-.h-fix{
+.h-fix {
   position: fixed;
   top: -141px;
   left: 0;
   width: 100%;
 }
-.h-show{
+.h-show {
   display: block;
   width: 20%;
   text-align: center;
 }
-.h-show img{
+.h-show img {
   width: 70%;
 }
-.h-fix-gnb{
+.h-fix-gnb {
   width: 80%;
 }

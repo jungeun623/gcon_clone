@@ -193,15 +193,15 @@ $(document).ready(function () {
       alramA.eq(index).addClass("alram-tab-menu-focus");
     });
   });
-  // hub 메뉴기능
+  // hub메뉴기능
   const hubMenus = $(".hub-menu a");
   const hubInfos = $(".hub-info > li");
   $.each(hubMenus, function (index, item) {
-    // console.log(this)
-    $(this).mouseenter(function () {
-      hubInfos.removeClass("hub-info-focus");
-      hubInfos.eq(index).addClass("hub-info-focus");
-    });
+    // console.log(this);
+     $(this).mouseenter(function(){
+      hubInfos.removeClass("hub-info-focus")
+      hubInfos.eq(index).addClass("hub-info-focus")
+     });
   });
   // ====================================
 });

@@ -388,50 +388,50 @@
 }
 
 .news-info-sm {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
 }
 
 .news-cate-txt {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
 
-  background: #000;
-  color: #fff;
-  font-size: 1.4rem;
-  font-family: "NanumSquare";
-  line-height: 2.5;
-  padding: 0 10px;
+    background: #000;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'NanumSquare';
+    line-height: 2.5;
+    padding: 0 10px;
 }
 
 .news-desc {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
 
-  font-size: 1.66rem;
-  font-weight: 400;
-  font-family: "NanumSquare";
-  color: #333;
-  line-height: 2.25rem;
-  letter-spacing: -1px;
+    font-size: 1.66rem;
+    font-weight: 400;
+    font-family: 'NanumSquare';
+    color: #333;
+    line-height: 2.25rem;
+    letter-spacing: -1px;
 
-  overflow: hidden;
+    overflow: hidden;
 }
 
+
 .news-date {
-  position: relative;
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-family: "NanumSquare";
-  color: #888;
-  letter-spacing: -1px;
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'NanumSquare';
+    color: #888;
+    letter-spacing: -1px;
 }
 
 .news-box-sm .news-desc {
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
-

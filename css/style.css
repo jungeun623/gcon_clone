@@ -76,6 +76,35 @@ body {
   margin: 0 auto;
 }
 /* 안내창 */
+/* 고정메뉴 */
+.fix-menu {
+  position: fixed;
+  right: 40px;
+  top: 200px;
+  display: block;
+  z-index: 9999999;
+
+  font-size: 1.5rem;
+  font-family: "NanumSquare";
+  letter-spacing: -1px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.fix-menu-list{
+  position: relative;
+  display: block;
+}
+
+.fix-menu-list>li {
+  position: relative;
+  display: block;
+}
+
+.fix-menu-list>li:hover a {
+  transform: translateX(-20px);
+}
 
 .fix-a {
   position: relative;
@@ -96,13 +125,14 @@ body {
   display: block;
   margin-top: 13px;
   margin-bottom: 2px;
-  font-size: 2rem;
+  font-size: 2.0rem;
   color: #ccc;
 }
 .fix-a-focus {
   background: #ec008c;
   color: #fff;
 }
+
 
 .gotop {
   position: relative;
@@ -120,7 +150,7 @@ body {
 }
 
 .gotop_focus {
-  opacity: 1;
+  opacity: 1.0;
   visibility: visible;
 }
 
@@ -128,24 +158,9 @@ body {
   display: block;
   margin-top: 13px;
   color: #ccc;
-  font-size: 2rem;
-}
-/* 고정메뉴 */
+  font-size: 2.0rem;
 
-.fix-menu-list {
-  position: relative;
-  display: block;
 }
-
-.fix-menu-list > li {
-  position: relative;
-  display: block;
-}
-
-.fix-menu-list > li:hover a {
-  transform: translateX(-20px);
-}
-
 /* 전체영역 */
 .wrap {
   position: relative;
@@ -176,7 +191,7 @@ body {
   display: block;
   float: left;
   width: 175px;
-  background-color: rgb(56, 120, 99);
+  /* background-color: rgb(56, 120, 99); */
 }
 .h-link-list > li::before {
   content: "";
@@ -311,7 +326,7 @@ body {
 }
 .header-bottom .pagew {
   height: 65px;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .logo-gnb {
   position: absolute;
@@ -368,7 +383,6 @@ body {
 }
 /* depth메뉴 */
 .submenu {
-  background-color: aqua;
   position: absolute;
   top: 65px;
   left: 50%;
@@ -506,7 +520,6 @@ body {
   width: 24px;
 
   margin-bottom: 3px;
-  background-color: #ec008c;
 }
 
 /* 서브메뉴에 호버했을때 바탕화면 */
@@ -520,7 +533,6 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 99999;
 }
-
 /* 상단 스크롤시 class추가 */
 .h-fix {
   position: fixed;
